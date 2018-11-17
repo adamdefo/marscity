@@ -1,0 +1,29 @@
+header.header.js-header
+	.header__container
+		.header__logo
+			a.logo.logo-white(href="/")
+				img(src="img/logo.png")
+		.header__nav
+			nav.nav.js-nav
+				.nav__item
+					a.nav__link._active(href="#timesheet" data-scrollto="timesheet")
+						span Расписание
+				.nav__item
+					a.nav__link(href="#films" data-scrollto="films")
+						span Фильмы
+				.nav__item
+					a.nav__link(href="#events" data-scrollto="events")
+						span События
+				.nav__item
+					a.nav__link(href="#about" data-scrollto="about")
+						span О нас
+				.nav__item
+					a.nav__link(href="#contacts" data-scrollto="contacts")
+						span Контакты
+		.header__right
+			a.order-link(href="tel:+79615128172")
+				.order-link__phone
+					span 8 961 512-81-72
+				.order-link__txt
+					span Бронирование билетов 
+			//- a(href="https://api.whatsapp.com/send?phone=79615128172" target="_blank" title="Записаться в Whatsapp") Записаться

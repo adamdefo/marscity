@@ -1,0 +1,82 @@
+.header
+	background-color: #ffffff
+	box-shadow: 0 5px 25px rgba(0,0,0,.15)
+	position: absolute
+	top: 100px
+	left: 0
+	width: 100%
+	z-index: 100
+	-webkit-transition: background-color .25s
+	-moz-transition: background-color .25s
+	transition: background-color .25s
+	& a
+		-webkit-transition: all .25s
+		-moz-transition: all .25s
+		transition: all .25s
+	&__container
+		position: relative
+		margin: 0 auto
+		padding: 0 15px
+		min-width: 1160px
+		width: 100%
+		max-width: 1160px
+		-webkit-transition: padding .25s
+		-moz-transition: padding .25s
+		transition: padding .25s
+	&__logo
+		display: inline-block
+		vertical-align: middle
+		max-width: 350px
+		margin-right: 80px
+	&__caption
+		display: block
+		font-size: 3rem
+		font-weight: bold
+		line-height: 1.5
+	&__nav
+		display: inline-block
+		vertical-align: middle
+		& .nav
+			display: table-cell
+			vertical-align: middle
+	&__order
+		position: absolute
+		bottom: -10px
+		left: 0
+		font-size: 2.25rem
+		text-align: center
+		width: 100%
+		& label
+			display: block
+			font-size: 1.35rem
+	&__right
+		float: right
+		padding-top: 10px
+		text-align: right
+	&__phone
+		background: rgba(255, 255, 255, 0.1)
+		border-radius: 5px
+		display: block
+		color: #ffffff
+		font-size: 1.9rem
+		line-height: 1
+		padding: 1.05rem 1.45rem
+		background: #f2f8fd
+		color: $blue
+		&-xs
+			display: none
+	&__callback
+		background-color: #93c11c
+		border: 0
+		border-radius: 4px
+		color: #ffffff
+		font-size: 1.4rem
+		font-weight: 700
+		letter-spacing: .1rem
+		padding: .75rem 1.75rem
+		text-transform: uppercase
+		&:hover
+			background-color: #afda41
+			color: #ffffff
+		&:active
+			background-color: #0c8d35

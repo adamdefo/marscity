@@ -1,0 +1,60 @@
+.footer
+	position: relative
+	font-size: 1.35rem
+	line-height: 1.5
+	padding: 30px 30px 15px
+	z-index: 10
+	&__inner
+		& > .container
+			border-top: 2px solid #dddddd
+			padding-top: 15px
+	.footer__logo
+		background: #ffffff
+		border-radius: 5px
+		font-size: 0
+		line-height: 0
+		padding: 4px 10px 6px
+	&__item
+		float: left
+		display: inline-block
+		vertical-align: middle
+		padding: 10px 15px 0
+	&__social
+		margin-bottom: 5px
+	&__copyright
+		margin-bottom: 5px
+	&__rights
+		color: #acacac
+		margin-top: 10px
+		font-size: 1.2rem
+
+@media (max-width: 780px)
+	.footer
+		padding: 15px
+
+.it-agency
+	position: relative
+	line-height: 1.25
+	padding-left: 127px
+	text-align: left
+	& a
+		border-bottom: 1px solid rgba(255,255,255,.25)
+		color: #ffffff
+		&:hover 
+			border-bottom-color: transparent
+	& img
+		position: absolute
+		top: 3px
+		left: 0
+		width: 117px
+		height: 16px
+
+.social
+	list-style: none
+	margin: 0
+	padding: 0
+	&__item
+		display: inline-block
+		margin-right: 10px
+		&:last-child
+			margin-right: 0

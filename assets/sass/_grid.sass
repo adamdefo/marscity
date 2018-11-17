@@ -1,0 +1,51 @@
+.container
+	position: relative
+	margin: 0 auto
+	padding: 0 15px
+	max-width: 1160px
+	width: 100%
+	&:before, &:after
+		clear: both
+		content: ''
+		display: block
+		height: 0
+
+.row
+	margin: 0 -15px
+
+.col
+	float: left
+	position: relative
+	padding: 0 15px
+	width: 100%
+	&-1
+		width: 8.333333%	
+	&-2
+		width: 16.666667%
+	&-3
+		width: 25%
+	&-4
+		width: 33.33%
+		&:nth-child(2n)
+			width: 33.34%
+	&-5
+		width: 41.666667%
+	&-6
+		width: 50%
+	&-7
+		widows: 58.333333%
+	&-8
+		widows: 66.666667%
+	&-9
+		widows: 75%
+	&-10
+		widows: 83.333333%
+	&-11
+		widows: 91.666667%
+
+.clr, .row
+	&:before, &:after,
+		content: ''
+		clear: both
+		display: block
+		line-height: 0
