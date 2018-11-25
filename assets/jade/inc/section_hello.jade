@@ -1,4 +1,26 @@
 section.section.section-hello
-	.container
-		.section__title
-			h1.ttl.ttl-hello Привет!
+	.promo-slider
+		.promo-slider__item
+			.container
+				.promo-slider__content
+					h2.promo-slider__title Макбет
+					.promo-slider__subtitle Краткое описание фильма в две строчки максимум
+					.promo-slider__tickets
+						.tickets
+							.tickets__label Сегодня:
+							ul.list.list-inline.tickets__list
+								li.tickets__item
+									a.ticket.js-ticket(data-ticket-id="1")
+										span.ticket__attr.ticket__time 11:00
+										span.ticket__attr.dot
+										span.ticket__attr.ticket__cost 150 р.
+								li.tickets__item
+									a.ticket.js-ticket(data-ticket-id="2")
+										span.ticket__attr.ticket__time 13:00
+										span.ticket__attr.dot
+										span.ticket__attr.ticket__cost 150 р.
+								li.tickets__item
+									a.ticket.js-ticket(data-ticket-id="3")
+										span.ticket__attr.ticket__time 19:00
+										span.ticket__attr.dot
+										span.ticket__attr.ticket__cost 300 р.

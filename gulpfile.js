@@ -18,7 +18,6 @@ gulp.task('jade', function() {
 });
 
 gulp.task('sass', function() {
-    // gulp.src(['./assets/sass/*.sass', '!./assets/sass/_*.sass'])
     gulp.src(['./assets/sass/*.sass'])
     .pipe(sass())
     .pipe(myth())
@@ -32,8 +31,8 @@ gulp.task('fonts', function() {
 });
 
 gulp.task('js', function() {
-    gulp.src(['!./assets/js/vendor/vue/*.js', './assets/js/vendor/*.js', './assets/js/*.js'])
-        .pipe(concat('app.js'))
+    gulp.src(['./assets/js/vendor/*.js', './assets/js/main.js'])
+        .pipe(concat('main.bundle.js'))
         .pipe(gulp.dest('./dev/js'))
         .pipe(browserSync.reload({stream:true}));
 });
@@ -62,7 +61,6 @@ gulp.task('default', ['browser-sync', 'sass', 'jade', 'js', 'images', 'fonts'], 
 // сборка проекта в продакшн
 gulp.task('build', function() {
     gulp.src('./dev/css/styles.css')
-        //.pipe(sass())
         .pipe(myth())
         .pipe(csso())
         .pipe(gulp.dest('./build/css/'));
@@ -74,7 +72,7 @@ gulp.task('build', function() {
         .pipe(jade())
         .pipe(gulp.dest('./build/'));
 
-    gulp.src('./dev/js/app.js')
+    gulp.src('./dev/js/main.bundle.js')
         .pipe(uglify())
         .pipe(gulp.dest('./build/js/'));
 

@@ -10,19 +10,22 @@
 		position: relative
 		display: inline-block
 		vertical-align: top
-		font-size: 1.8rem
-		line-height: 6rem
-		margin-right: 20px
+		font-size: 1.3rem
+		letter-spacing: .1rem
+		line-height: 4.5rem
+		margin-right: 45px
+		text-transform: uppercase
 		&:last-child
 			margin-right: 0
 	&__link
 		display: block
-		color: $blue
+		border-bottom: 2px solid transparent 
+		color: #ffffff
 		&:hover
-			color: $link_hover
+			border-bottom-color: $link_hover
 		&._active
-			border: 0
-			color: $link_hover
+			border-bottom-color: $link_hover
+			color: #ffffff
 		& span
 			position: relative
 			display: inline-block
@@ -32,24 +35,22 @@
 .header
 	&-fixed 
 		position: fixed
-		top: 0
 		background-color: #ffffff
+		box-shadow: 0 5px 25px rgba(0,0,0,.15)
 		& .nav
 			&__link
-				display: block
-				border-bottom: 2px solid #ffffff 
 				color: $blue
 				&:hover
 					border-bottom-color: #ffffff
-					color: $link_hover
 				&._active
-					border-bottom: 2px solid $link_hover
 					color: $link_hover
 		& .header__phone
 			background: #F2F8FD
 			color: $blue
 			&:hover
 				color: $link_hover
+		& .logo
+			color: $blue
 
 .burger
 	display: none
@@ -65,13 +66,10 @@
 .logo
 	border: 0
 	line-height: 0
-	display: inline-block
-	vertical-align: middle
-	width: 181px
-	&-white
-			display: inline-block
-	&-colorful
-		display: none
+	color: #ffffff
+	font-size: 1.75rem
+	letter-spacing: .1rem
+	text-transform: uppercase
 
 @media (max-width: 1600px)
 	.nav__item
